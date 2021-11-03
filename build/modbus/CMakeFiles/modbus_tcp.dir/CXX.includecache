@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tylor/dev/temp-susnspec-modbus/modbus/include/modbus/modbus_tcp.hpp
+string
+-
+cstdint
+-
+modbus/modbus-tcp.h
+-
+
+/home/tylor/dev/temp-susnspec-modbus/modbus/modbus_tcp.cpp
+include/modbus/modbus_tcp.hpp
+/home/tylor/dev/temp-susnspec-modbus/modbus/include/modbus/modbus_tcp.hpp
+iostream
+-
+
