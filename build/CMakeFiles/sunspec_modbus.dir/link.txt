@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsunspec_modbus.a CMakeFiles/sunspec_modbus.dir/device.o CMakeFiles/sunspec_modbus.dir/modbus_adapter.o
-/usr/bin/ranlib libsunspec_modbus.a
