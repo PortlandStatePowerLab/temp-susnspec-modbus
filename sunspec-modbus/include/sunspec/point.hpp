@@ -5,47 +5,40 @@
 
 namespace sunspec
 {
-    namespace point
+    enum class Access : uint8_t
     {
-        enum class Access : uint8_t
-        {
-            kRead,
-            kReadWrite
-        };
+        kRead,
+        kReadWrite
+    };
 
-        enum class Category : uint8_t
-        {
-            kNone,
-            kMeasurement,
-            kMetered,
-            kStatus,
-            kEvent,
-            kSetting,
-            kControl
-        };
+    enum class Category : uint8_t
+    {
+        kNone,
+        kMeasurement,
+        kMetered,
+        kStatus,
+        kEvent,
+        kSetting,
+        kControl
+    };
 
-        template <typename T>
-        class Point
-        {
-        public:
-            virtual ~Point();
-            void Print();
-            virtual T GetValue() = 0;
-            virtual void SetValue(T value);
+    // pad has been assigned an unsigned int based on standard
+    using Pad = int16_t;
 
-        private:
-            std::string id;
-            uint8_t len;
-            uint16_t offset;
-            T value;
-            std::string sf;
-            std::string units;
-            Access access;
-            bool mandatory;
-            Category category;
-        };
-    } // namespace point
-
+    // pure virtual with template for the type of point
+    template <typename T>
+    struct Point
+    {
+        std::string id;
+        uint8_t len = 1;
+        uint16_t offset;
+        T type;
+        std::string sf;
+        std::string units;
+        Access access = Access::kRead;
+        bool mandatory = false;
+        Category category = Category::kMeasurement;
+    };
 } // namespace sunspec
 
 #endif // __POINT_H__
