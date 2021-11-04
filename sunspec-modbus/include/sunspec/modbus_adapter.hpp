@@ -11,6 +11,7 @@ namespace sunspec
         ~ModbusAdapter();
 
     private:
+        ModbusTCP* modbus_tcp_;
     };
 } // namespace sunspec
 

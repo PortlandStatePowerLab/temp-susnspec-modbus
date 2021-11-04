@@ -1,6 +1,8 @@
 set(COMPONENT_NAME sunspec_modbus)
 
-add_executable()(${COMPONENT_NAME} STATIC
+add_executable(${COMPONENT_NAME}
+    main.cpp
+    common.cpp
     device.cpp
     modbus_adapter.cpp
 )

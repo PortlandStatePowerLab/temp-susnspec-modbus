@@ -1,5 +1,5 @@
-#include "include/sunspec/block.hpp"
-#include "include/sunspec/point.hpp"
+#include "block.hpp"
+#include "point.hpp"
 
 namespace sunspec
 {
@@ -12,6 +12,4 @@ namespace sunspec
     private:
         /* data */
     };
-
-    class 
 } // namespace sunspec
