@@ -11,3 +11,10 @@ ModbusAdapter::~ModbusAdapter()
 {
 
 }
+
+// Recursive function to reach each block from a 
+// sunspec device
+void ModbusAdapter::Query() 
+{
+    
+}

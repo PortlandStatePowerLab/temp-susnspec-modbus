@@ -1,15 +1,22 @@
+#include <string>
+#include <cstdint>
 #include "block.hpp"
 #include "point.hpp"
 
 namespace sunspec
 {
-    class Common : public Block
+
+    struct Common : public Block
     {
-    public:
-        Common(/* args */);
+        Common();
         ~Common();
 
     private:
-        /* data */
+        Point<std::string> manufacturer;
+        Point<std::string> model;
+        Point<std::string> options;
+        Point<std::string> version;
+        Point<std::string> serial_number;
+        Point<uint16_t> device_address;
     };
 } // namespace sunspec
