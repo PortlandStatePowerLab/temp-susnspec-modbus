@@ -8,7 +8,9 @@ namespace sunspec
     enum class Access : uint8_t
     {
         kRead,
-        kReadWrite
+        kWrite,
+        kReadWrite,
+
     };
 
     enum class Category : uint8_t
