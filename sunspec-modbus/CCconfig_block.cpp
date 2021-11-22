@@ -357,3 +357,8 @@ CCconfig_block::CCconfig_block(/*64112 arguments*/)
 
 
 }
+
+CCconfig_block::~CCconfig_block()
+{
+    
+}

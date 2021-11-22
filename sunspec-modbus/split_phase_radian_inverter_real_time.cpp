@@ -295,7 +295,9 @@ Split_phase_radian_inverter_real_time::Split_phase_radian_inverter_real_time () 
     GS_Split_AC_Couple_kW.access = Access::kRead;
 
 
+}
 
-
-
+Split_phase_radian_inverter_real_time::~Split_phase_radian_inverter_real_time()
+{
+    
 }
