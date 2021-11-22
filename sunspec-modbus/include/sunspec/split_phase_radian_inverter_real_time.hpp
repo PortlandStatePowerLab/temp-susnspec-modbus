@@ -6,7 +6,7 @@
 namespace sunspec
 {
 
-    struct Split_phase_radian_inverter_real_time : public Block // Block 64110
+    struct Split_phase_radian_inverter_real_time : public Block // Block 64115
     {
       Split_phase_radian_inverter_real_time();
       ~Split_phase_radian_inverter_real_time();
