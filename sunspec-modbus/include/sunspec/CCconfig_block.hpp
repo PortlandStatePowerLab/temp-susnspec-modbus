@@ -6,7 +6,7 @@
 namespace sunspec
 
 {
-    struct CCconfig_block : public Block // Block 64110
+    struct CCconfig_block : public Block // Block 64112
     {
         CCconfig_block();
         ~CCconfig_block();
