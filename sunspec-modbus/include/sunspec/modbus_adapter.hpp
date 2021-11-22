@@ -23,7 +23,7 @@ namespace sunspec
         sunspec::Radian_Inverter_Config_Block radian_inverter_config_block_;
         sunspec::Single_Phase_Radian_Inverter_Real_Time_Block single_phase_radian_inverter_real_time_block_; 
         sunspec::OutBack_Control_Block outback_control_block_;
-    
+        sunspec::SunSpec_Inverter_Single_Phase sunspec_inverter_single_phase_;
     };
     
 } // namespace sunspec
